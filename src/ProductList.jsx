@@ -284,19 +284,20 @@ function ProductList({ onHomeClick }) {
     textDecoration: "none",
   };
 
-  // 🚨 ADDED: Styles for the cart badge
   const badgeStyle = {
-    position: "absolute",
-    top: "-10px",
-    right: "-10px",
-    backgroundColor: "red", // Use red for visibility, as seen in the image
-    color: "white",
-    borderRadius: "50%",
-    padding: "2px 7px",
-    fontSize: "12px",
-    fontWeight: "bold",
-    lineHeight: "1",
-  };
+    position: 'absolute',
+    top: '-10px',
+    right: '-10px',
+    backgroundColor: 'red',
+    color: 'white',
+    borderRadius: '50%',
+    padding: '4px 6px', // Increased vertical padding for better visibility
+    fontSize: '12px',
+    fontWeight: 'bold',
+    minWidth: '20px', // Ensures it is a minimum size for single digits
+    textAlign: 'center', // Centers the text
+    // Removed lineHeight: '1' which often causes misalignment
+};
 
   const cartLinkStyle = {
     position: "relative", // Set parent to relative for absolute positioning of badge
