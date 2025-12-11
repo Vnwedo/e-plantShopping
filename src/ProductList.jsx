@@ -286,7 +286,7 @@ function ProductList({ onHomeClick }) {
 
   const badgeStyle = {
     position: 'absolute',
-    top: '20%',
+    top: '35%',
     left: '50%',
     // Added a small pixel offset to correct visual misalignment
     transform: 'translate(calc(-50% + 1px), calc(-50% + 2px))', 
