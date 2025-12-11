@@ -286,14 +286,15 @@ function ProductList({ onHomeClick }) {
 
   const badgeStyle = {
     position: 'absolute',
-    top: '50%',             // Vertical center of the h1 container
-    left: '50%',            // Horizontal center of the h1 container
-    transform: 'translate(-50%, -50%)', // Centering utility
-    backgroundColor: 'transparent', // Remove the red circle background
-    color: '#ffffffff',       // Use the primary green color for visibility over the white SVG
-    fontSize: '24px',       // Larger font for better visibility
-    fontWeight: '900',      // Extra bold
-}
+    top: '50%',
+    left: '50%',
+    // Added a small pixel offset to correct visual misalignment
+    transform: 'translate(calc(-50% + 1px), calc(-50% + 2px))', 
+    backgroundColor: 'transparent',
+    color: 'white',
+    fontSize: '24px',
+    fontWeight: '900',
+};
 
   const cartLinkStyle = {
     position: "relative", // Set parent to relative for absolute positioning of badge
