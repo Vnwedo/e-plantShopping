@@ -290,7 +290,7 @@ function ProductList({ onHomeClick }) {
     left: '50%',            // Horizontal center of the h1 container
     transform: 'translate(-50%, -50%)', // Centering utility
     backgroundColor: 'transparent', // Remove the red circle background
-    color: '#4CAF50',       // Use the primary green color for visibility over the white SVG
+    color: '#ffffffff',       // Use the primary green color for visibility over the white SVG
     fontSize: '24px',       // Larger font for better visibility
     fontWeight: '900',      // Extra bold
 }
